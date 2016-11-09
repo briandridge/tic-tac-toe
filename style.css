@@ -1,0 +1,19 @@
+.container {
+	width: 100%;
+}
+
+.board {
+	
+}
+
+table {
+	border: 2px solid black;
+	text-align: center;
+}
+
+td {
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+
+}
