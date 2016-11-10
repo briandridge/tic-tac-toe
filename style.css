@@ -1,8 +1,21 @@
-.container {
+body {
+	font-family: 'Raleway', sans-serif;
 	width: 100%;
+	margin: auto;
+
+}
+
+.container {
+
+}
+
+h1 {
+	text-align: center;
 }
 
 .board {
+	margin: auto;
+	
 	
 }
 
@@ -16,4 +29,22 @@ td {
 	width: 100px;
 	border: 1px solid black;
 
+}
+
+.buttonDiv {
+	text-align: center;
+}
+
+button {
+	font-weight: 500;
+	font-size: 18px;
+	margin: auto;
+	text-align: center;
+	margin: 30px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+button:hover {
+	background-color: #d3d3d3;
 }
