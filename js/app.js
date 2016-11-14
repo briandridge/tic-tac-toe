@@ -3,17 +3,17 @@ $(document).ready(function() {
 	var clickNumber=0;  
 
 	$('#board').find('td').on('click', function(){
-	    if (clickNumber %2 === 0) {
+	    if (clickNumber %2 === 0 && this.innerHTML === "") {
 	      this.innerHTML = "x";
 	      this.setAttribute("class", "xClick");
-
+	      clickNumber ++;
 	      // checkForWin('x');
-	    	} else {
+	    	} else if ((clickNumber %2 !== 0) && (this.innerHTML === "")) {
 	      this.innerHTML = "o";
 	      this.setAttribute("class", "oClick");
+	      clickNumber ++;
 	      // checkForWin('o');
 	   	}
-	    clickNumber ++;
 	    console.log(clickNumber);
 	 });
 	

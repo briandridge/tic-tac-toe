@@ -11,6 +11,7 @@ body {
 
 h1 {
 	text-align: center;
+	font-weight: 400;
 }
 
 .board {
@@ -20,14 +21,14 @@ h1 {
 }
 
 table {
-	border: 2px solid black;
+	border: 1px solid black;
 	text-align: center;
 }
 
 td {
 	height: 100px;
 	width: 100px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 
 }
 
@@ -36,8 +37,9 @@ td {
 }
 
 button {
-	font-weight: 500;
-	font-size: 18px;
+	font-weight: 400;
+	font-size: 13px;
+	padding: 5px 10px;
 	margin: auto;
 	text-align: center;
 	margin: 30px;
