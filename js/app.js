@@ -1,17 +1,23 @@
 $(document).ready(function() {
     
-	var clickNumber=0;  
+	var clickNumber=0;
+	var xArray = [];
+	var oArray = []; 
 
 	$('#board').find('td').on('click', function(){
 	    if (clickNumber %2 === 0 && this.innerHTML === "") {
 	      this.innerHTML = "x";
 	      this.setAttribute("class", "xClick");
 	      clickNumber ++;
+	      xArray.push(this.id);
+	      console.log(xArray);
 	      // checkForWin('x');
 	    	} else if ((clickNumber %2 !== 0) && (this.innerHTML === "")) {
 	      this.innerHTML = "o";
 	      this.setAttribute("class", "oClick");
 	      clickNumber ++;
+	      oArray.push(this.id);
+	      console.log(oArray);
 	      // checkForWin('o');
 	   	}
 	    console.log(clickNumber);
@@ -23,10 +29,6 @@ $(document).ready(function() {
 	});
 
 });
-
-
-// var xArray = [];
-// var oArray = [];
 
 // var checkForWin = function(player);	
 // if xArray === [1,2,3] || [4,5,6] || [7,8,9] || [1,4,7] || [2,5,8] || [3,6,9] || [1,5,9] || [3,5,7] {
