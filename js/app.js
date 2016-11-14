@@ -11,14 +11,14 @@ $(document).ready(function() {
 	      clickNumber ++;
 	      xArray.push(this.id);
 	      console.log(xArray);
-	      // checkForWin('x');
+	      // checkForWin();
 	    	} else if ((clickNumber %2 !== 0) && (this.innerHTML === "")) {
 	      this.innerHTML = "o";
 	      this.setAttribute("class", "oClick");
 	      clickNumber ++;
 	      oArray.push(this.id);
 	      console.log(oArray);
-	      // checkForWin('o');
+	      // checkForWin();
 	   	}
 	    console.log(clickNumber);
 	 });
@@ -28,13 +28,18 @@ $(document).ready(function() {
 		clickNumber = 0;
 	});
 
+
+
+	// var checkForWin = function(player) {	
+	// 	$('board').find('td').
+
+	// 	if (xArray == [1,2,3] || [4,5,6] || [7,8,9] || [1,4,7] || [2,5,8] || [3,6,9] || [1,5,9] || [3,5,7]) {
+	// 		// alert("X wins");
+	// 	} else if (oArray == [1,2,3] || [4,5,6] || [7,8,9] || [1,4,7] || [2,5,8] || [3,6,9] || [1,5,9] || [3,5,7]);
+	// 		// alert("O wins");
+	// };
+
 });
-
-// var checkForWin = function(player);	
-// if xArray === [1,2,3] || [4,5,6] || [7,8,9] || [1,4,7] || [2,5,8] || [3,6,9] || [1,5,9] || [3,5,7] {
-// 		alert("Success")
-// 	}
-
 
 // ok // - A user should see a 3x3 grid for the tic-tac-toe board
 // ok // A user should be able to click on different squares to make a move
